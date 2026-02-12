@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Employer Profile | LocalTalent</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d59f2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <!-- Navigation Header -->
+    <div id="navbar-placeholder"></div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Hero Section -->
+        <div class="relative mb-24">
+            <div class="h-64 md:h-80 w-full overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
+                <img alt="Office Cover" class="w-full h-full object-cover"
+                    data-alt="Modern open-plan office workspace with wooden tables"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-EwqGjwr0iiV3oRvWmVc2tDOttmXobGzhr2BBw1vIyajWM5gmhkYDAW-uUFzvY5h5q5qU4wZEX6osQkUvSi6fD_18ZYd8mjn79Ux9po14gNqdg8gaL23hLxpLTAnjcY3j_gYOO8TO9VpVWlMxdQEaHbEaEwkIqgB_Ypl_ZYVp6Sw248qHk1dJc3m1baEWTvaQT6RELNM4gUzsjZaRJl91z-loM4VORHFRX3m81raRMEidNhU_TXm_qU8B1ff4mjLpC-6V7d-osRKf" />
+            </div>
+            <!-- Company Logo & Basic Info Overlap -->
+            <div class="absolute -bottom-16 left-8 flex flex-col md:flex-row items-end md:items-center gap-6">
+                <div
+                    class="w-32 h-32 md:w-40 md:h-40 rounded-xl bg-white dark:bg-slate-800 p-2 shadow-xl ring-4 ring-white dark:ring-background-dark">
+                    <div class="w-full h-full bg-primary/10 rounded-lg flex items-center justify-center">
+                        <span class="material-icons text-primary text-5xl">apartment</span>
+                    </div>
+                </div>
+                <div class="mb-2 md:mb-4">
+                    <h1 class="text-3xl font-bold text-slate-900 dark:text-white">EcoTech Solutions</h1>
+                    <p class="text-slate-600 dark:text-slate-400 font-medium flex items-center gap-2">
+                        <span class="material-icons text-sm">location_on</span>
+                        Downtown, Seattle • <span class="text-primary">Sustainable Energy</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Action Buttons -->
+            <div class="absolute -bottom-12 right-0 flex gap-3">
+                <button
+                    class="flex items-center gap-2 px-6 py-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm">
+                    <span class="material-icons text-sm">share</span>
+                    Share
+                </button>
+                <button
+                    class="flex items-center gap-2 px-6 py-2.5 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                    <span class="material-icons text-sm">add</span>
+                    Follow
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column: Content -->
+            <div class="lg:col-span-2 space-y-12">
+                <!-- Who We Are -->
+                <section>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-1 h-8 bg-primary rounded-full"></div>
+                        <h2 class="text-2xl font-bold">Who We Are</h2>
+                    </div>
+                    <div class="prose prose-slate dark:prose-invert max-w-none">
+                        <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                            EcoTech Solutions is a mission-driven company dedicated to accelerating the world's
+                            transition to sustainable energy. Founded right here in Seattle, we believe that the future
+                            of our planet depends on the brilliance of local talent working together to solve global
+                            challenges.
+                        </p>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Our team is built on a foundation of transparency, innovation, and community impact. We
+                            don't just build energy solutions; we build careers and long-lasting relationships within
+                            the neighborhoods we serve.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+                        <div
+                            class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 text-center">
+                            <span class="material-icons text-primary mb-2">volunteer_activism</span>
+                            <h4 class="font-bold">Mission First</h4>
+                            <p class="text-xs text-slate-500">Driving green change</p>
+                        </div>
+                        <div
+                            class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 text-center">
+                            <span class="material-icons text-primary mb-2">groups</span>
+                            <h4 class="font-bold">Community</h4>
+                            <p class="text-xs text-slate-500">Local impact focus</p>
+                        </div>
+                        <div
+                            class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 text-center">
+                            <span class="material-icons text-primary mb-2">lightbulb</span>
+                            <h4 class="font-bold">Innovation</h4>
+                            <p class="text-xs text-slate-500">Cutting edge tech</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Testimonials -->
+                <section>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-1 h-8 bg-primary rounded-full"></div>
+                        <h2 class="text-2xl font-bold">Life at EcoTech</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Testimonial 1 -->
+                        <div
+                            class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-100 dark:border-slate-700 relative">
+                            <span
+                                class="material-icons text-primary/20 absolute top-4 right-4 text-4xl">format_quote</span>
+                            <div class="flex items-center gap-4 mb-4">
+                                <img alt="Employee" class="w-12 h-12 rounded-full object-cover"
+                                    data-alt="Professional portrait of a smiling woman in a business casual outfit"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY1qUsJaVqDkeGzQmuaTb4HWl_19hAYlHjgwVW0pfztdighHskCLppnZtDOHfDag6y8E4oIIRwsyUrfU50-C98cMAluro3plAJwo2pzGPHvxR7Fby5gYGfxQuT3r8_K3hLzygwsWGUqkx9455Hl067QeQ8b74CC_4p2HxlwkJqBO5mCW7RqT7pW2A0B_LNdnZu9N9VNeak-XqTaNj6qyYWHKG3opcdXd47SC9gPDY6dyYDIzAJJz2ZCLm5wEeuGZLH_fCQN0l-lsKZ" />
+                                <div>
+                                    <h4 class="font-bold text-sm">Sarah Jenkins</h4>
+                                    <p class="text-xs text-slate-500">Senior Software Engineer</p>
+                                </div>
+                            </div>
+                            <p class="text-sm italic text-slate-600 dark:text-slate-400">
+                                "The mentorship culture here is unmatched. I love that I'm working on tech that actually
+                                helps my neighbors live more sustainably."
+                            </p>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div
+                            class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-100 dark:border-slate-700 relative">
+                            <span
+                                class="material-icons text-primary/20 absolute top-4 right-4 text-4xl">format_quote</span>
+                            <div class="flex items-center gap-4 mb-4">
+                                <img alt="Employee" class="w-12 h-12 rounded-full object-cover"
+                                    data-alt="Close-up headshot of a man with glasses and a friendly expression"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKfF16ofWfdbN8v_Oa30pitLrQydRiZy11tV-_ck8F_O91zAtwu6V9t3fNKVESCDT9mqB0_QkXUvkHyUpTm9tqvRx8OYoNDWPSJrqJinDw2g8blKEs3pQjD21-ERDe--w9whAmsxs5GY5TGBydTdnwF9soWwTyRR0RYS6wue92Yzlm_IDOszsWyzzPEZnJq1Fv8ULFqLyJgrRKJiEbodmcsjKXDOrd7Z9iD79Lk3e1uIiBo_iDv73Em1DXFRrbVfUY5Ps3O8zj9wZW" />
+                                <div>
+                                    <h4 class="font-bold text-sm">Marcus Chen</h4>
+                                    <p class="text-xs text-slate-500">Product Designer</p>
+                                </div>
+                            </div>
+                            <p class="text-sm italic text-slate-600 dark:text-slate-400">
+                                "Being close to the city center and having a flexible hybrid schedule means I never miss
+                                my kids' soccer games. Truly a local-first company."
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Job Openings -->
+                <section id="jobs">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-8 bg-primary rounded-full"></div>
+                            <h2 class="text-2xl font-bold">Current Openings</h2>
+                        </div>
+                        <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">8
+                            Positions</span>
+                    </div>
+                    <div class="space-y-4">
+                        <!-- Job Card 1 -->
+                        <div
+                            class="group bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all cursor-pointer">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-lg bg-slate-50 dark:bg-slate-700 flex items-center justify-center text-primary">
+                                        <span class="material-icons">code</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg group-hover:text-primary transition-colors">Backend
+                                            Developer (Node.js)</h3>
+                                        <div class="flex flex-wrap items-center gap-y-1 gap-x-4 text-sm text-slate-500">
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-icons text-xs">schedule</span> Full-time</span>
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-icons text-xs text-green-500">stars</span> $120k -
+                                                $150k</span>
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-icons text-xs">near_me</span> 2.4 miles away</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button onclick="window.location.href='detail.html'"
+                                    class="px-6 py-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-lg font-bold text-sm group-hover:bg-primary group-hover:text-white transition-all">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                        <!-- ... other job cards ... -->
+                    </div>
+                    <div class="mt-8 text-center">
+                        <button class="text-primary font-bold text-sm hover:underline">View all 8 open roles</button>
+                    </div>
+                </section>
+            </div>
+            <!-- Right Column: Sidebar -->
+            <div class="space-y-6">
+                <!-- Quick Info Card -->
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden sticky top-24 shadow-sm">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-6">Company Overview</h3>
+                        <div class="space-y-4">
+                            <!-- ... info items ... -->
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center">
+                                    <span class="material-icons text-primary text-xl">home</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500">Headquarters</p>
+                                    <p class="text-sm font-medium">Seattle, WA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-slate-100 dark:border-slate-700">
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Location</h4>
+                            <div class="h-48 bg-slate-200 dark:bg-slate-700 rounded-lg relative overflow-hidden group">
+                                <img alt="Map Location" class="w-full h-full object-cover"
+                                    data-alt="Map view showing a specific pin in downtown Seattle"
+                                    data-location="Seattle, WA"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhHFvUD23TRjQxfYRPmG6RkonLnXrkDG3anHVZqV7fZAWQ0yHKF7-k1AD3moLUnDi6Ipuob1PTOjjo3pT2txsRYTjKsTNPaawwj7x0oZxI24XHlEyzR6nbHN4YYOpI43G7PF1kW1diUNxsgSSauqofg4YtsMc7jH0i-pkJwFRZ-0jeKD7y7uqXHEVe3H9i_t8tOZHHFoae_x5dy1KuHI0kloChyiw0qeooo4r19_0ITn6giH8gRgoaWxixZChMX9CKzCFG_7LnEgh_" />
+                                <div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+                                    <div
+                                        class="w-10 h-10 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-lg border-2 border-primary animate-pulse">
+                                        <span class="material-icons text-primary">location_on</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>

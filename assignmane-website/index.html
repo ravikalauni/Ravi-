@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Job Seeker | Find Local Opportunities</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d59f2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img alt="Modern bright office background" class="w-full h-full object-cover opacity-10 dark:opacity-5"
+                data-alt="Modern bright corporate office workspace interior"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqKEfIjxaUnSqR5x43u1N6B5fOVCMfkp9X3I_2CKHpb8hBLttQPoUzUGD41-Ve6JYDMnaQ19MnI4l3rC35u4GaTmvsjYg0X-chGQ31rjNMaOZ3c4V38PHfyHZcMI2tUltWLNHF685SKyExvCOfsNK3gDfkV-AgoA_XkyIrisU1F0WB0d0S8dLXlGn6NDqPrAXC6cygwbjhdRXUi_eqqncXcAlTiznFn_1agLggfGqEelKin4FquUlS-utHoiSHV2bZCnq6sbQoZHTV" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-background-light dark:to-background-dark">
+            </div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight">
+                Find your next career move <br />
+                <span class="text-primary">right around the corner.</span>
+            </h1>
+            <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-12">
+                Connecting local talent with neighborhood opportunities. Discover thousands of jobs in your city and
+                build your future where you live.
+            </p>
+            <!-- Search Bar -->
+            <div
+                class="max-w-4xl mx-auto bg-white dark:bg-slate-900 p-2 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row gap-2">
+                <div
+                    class="flex-1 flex items-center px-4 border-b md:border-b-0 md:border-r border-slate-100 dark:border-slate-800">
+                    <span class="material-icons text-slate-400 mr-2">search</span>
+                    <input
+                        class="w-full py-3 bg-transparent border-none focus:ring-0 text-slate-900 dark:text-white placeholder-slate-400"
+                        placeholder="Job Title or Keyword" type="text" />
+                </div>
+                <div
+                    class="flex-1 flex items-center px-4 border-b md:border-b-0 md:border-r border-slate-100 dark:border-slate-800">
+                    <span class="material-icons text-slate-400 mr-2">location_on</span>
+                    <input
+                        class="w-full py-3 bg-transparent border-none focus:ring-0 text-slate-900 dark:text-white placeholder-slate-400"
+                        data-location="New York" placeholder="Location (City or Zip)" type="text" />
+                </div>
+                <div class="flex-1 flex items-center px-4">
+                    <span class="material-icons text-slate-400 mr-2">category</span>
+                    <select
+                        class="w-full py-3 bg-transparent border-none focus:ring-0 text-slate-900 dark:text-white appearance-none cursor-pointer">
+                        <option>All Categories</option>
+                        <option>Technology</option>
+                        <option>Healthcare</option>
+                        <option>Retail</option>
+                    </select>
+                </div>
+                <button onclick="window.location.href='search.html'"
+                    class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-primary/90 transition-all flex items-center justify-center gap-2">
+                    Search Jobs
+                </button>
+            </div>
+            <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm text-slate-500">
+                <span>Popular: </span>
+                <a class="hover:text-primary underline" href="#">Remote</a>
+                <a class="hover:text-primary underline" href="#">Marketing</a>
+                <a class="hover:text-primary underline" href="#">Software Engineering</a>
+                <a class="hover:text-primary underline" href="#">Nursing</a>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Categories -->
+    <section class="py-16 bg-white dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Popular Categories</h2>
+                    <p class="text-slate-500 mt-2">Explore roles across various industries</p>
+                </div>
+                <a class="text-primary font-semibold flex items-center gap-1 hover:underline" href="#">
+                    Browse All <span class="material-icons text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Category Card -->
+                <div
+                    class="group p-6 bg-background-light dark:bg-slate-800 rounded-xl hover:bg-primary/5 dark:hover:bg-primary/10 border border-transparent hover:border-primary/20 transition-all cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-white dark:bg-slate-700 rounded-lg shadow-sm flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                        <span class="material-icons">medical_services</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 dark:text-white">Healthcare</h3>
+                    <p class="text-sm text-slate-500 mt-1">1,240 Openings</p>
+                </div>
+                <div
+                    class="group p-6 bg-background-light dark:bg-slate-800 rounded-xl hover:bg-primary/5 dark:hover:bg-primary/10 border border-transparent hover:border-primary/20 transition-all cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-white dark:bg-slate-700 rounded-lg shadow-sm flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                        <span class="material-icons">computer</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 dark:text-white">Technology</h3>
+                    <p class="text-sm text-slate-500 mt-1">850 Openings</p>
+                </div>
+                <div
+                    class="group p-6 bg-background-light dark:bg-slate-800 rounded-xl hover:bg-primary/5 dark:hover:bg-primary/10 border border-transparent hover:border-primary/20 transition-all cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-white dark:bg-slate-700 rounded-lg shadow-sm flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                        <span class="material-icons">shopping_bag</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 dark:text-white">Retail</h3>
+                    <p class="text-sm text-slate-500 mt-1">420 Openings</p>
+                </div>
+                <div
+                    class="group p-6 bg-background-light dark:bg-slate-800 rounded-xl hover:bg-primary/5 dark:hover:bg-primary/10 border border-transparent hover:border-primary/20 transition-all cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-white dark:bg-slate-700 rounded-lg shadow-sm flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                        <span class="material-icons">restaurant</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 dark:text-white">Hospitality</h3>
+                    <p class="text-sm text-slate-500 mt-1">670 Openings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Jobs in Your Neighborhood -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Jobs in Your Neighborhood</h2>
+                    <p class="text-slate-500 mt-2">Recent opportunities near Seattle, WA</p>
+                </div>
+                <button
+                    class="px-4 py-2 bg-primary/10 text-primary rounded-lg font-semibold hover:bg-primary/20 transition-colors"
+                    onclick="window.location.href='search.html'">
+                    View All Jobs
+                </button>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Job Card 1 -->
+                <div
+                    class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-shadow relative">
+                    <div
+                        class="absolute top-6 right-6 px-2 py-1 bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-xs font-bold rounded">
+                        NEW</div>
+                    <div class="flex items-start gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+                            <img alt="Tech Corp Logo" class="w-full h-full object-cover"
+                                data-alt="Corporate company logo placeholder"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6wor0KtANyXKBl5kJM_h8mDGN45Wj1l2EFC6jXUis2iOQjmpqzCWuzFLhlspW1rEzXb-RKi5MokXHBfR5e4W-yCNMMv9A5jfagxdxVMOeoX695OGu6b0g_LRFTRmk6lPfaHcHCFrxS2wc1fY3OY7jtB8y6MJyOyktjnzDiPkibElgPglQDiPXmxzb7tuHElDmlUjstyxLbnRBjjW9cVPxpoZGJoN9qpoK35H6EDhWFXUF8KgS38uPUqBqLyqT3Qope385r5qffEO8" />
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white">Senior Product Designer</h3>
+                            <p class="text-primary font-medium">Mahendranagar Noodles</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full">Full-time</span>
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full">Rs.
+                            30,000
+                            - 40,000</span>
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full flex items-center gap-1">
+                            <span class="material-icons text-xs">location_on</span> 2.4 miles away
+                        </span>
+                    </div>
+                    <button onclick="window.location.href='detail.html'"
+                        class="w-full py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all">
+                        Quick Apply
+                    </button>
+                </div>
+                <!-- Job Card 2 -->
+                <div
+                    class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-shadow relative">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+                            <img alt="Health Logo" class="w-full h-full object-cover"
+                                data-alt="Medical center company logo placeholder"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCesga60lZrGRd6NfPfATCbC8h0QrdU9AgydSVl8FzEPJw1j8gPMWp2SvxyJSRBqYAvnf_pK-bWuDBV_AsSbaEs-N-NRF0Us0Pgzm_O3b-OWeMPFnyiqEe8Ij_fUd3mqSwLeWmJpsQbqsYE_IbzgNYNewWef7n2DNY8IbQbmc1nFrWFYS5inw2g7NY97XZJNKVo2ZQkwBf7Om0Zj392kKtYUR2UqXKv0xcxf77H0dcvRVo_8uQU1iU-DxlvTxzsTny4j0IXcVnLXV3S" />
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white">Clinical Nurse Manager</h3>
+                            <p class="text-primary font-medium">Mantra Hospital</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full">On-site</span>
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full">Rs.
+                            40,000
+                            - 45,000</span>
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full flex items-center gap-1">
+                            <span class="material-icons text-xs">location_on</span> 0.8 miles away
+                        </span>
+                    </div>
+                    <button onclick="window.location.href='detail.html'"
+                        class="w-full py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all">
+                        Quick Apply
+                    </button>
+                </div>
+                <!-- Job Card 3 -->
+                <div
+                    class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-shadow relative">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+                            <img alt="Marketing Logo" class="w-full h-full object-cover"
+                                data-alt="Marketing agency company logo placeholder"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgSRJUXcy-pUBqZm4HUPng5GZc3zgp3abh8ZLqObjJjLgQwq3epyrIRqCoXsAMGiR0wQ3sA5t89P0L2pvUPwfnsqWOgV8LDE9wUZHIqFvDfxqgax8BTqD0kfCi-NP0u9hUUgK3ZdZMuXy0_cc_NUGooXWvMmzR2moIIjfEHI0KtaA7bArC6oWeghAveXTPYi4dTRm82p13PAjQaAUVqB9LmEK62FvpbmlHh0of4ab61W8w4niCotrek-YoeMkztsoZpivKBSatrwa-" />
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white">Social Media Strategist</h3>
+                            <p class="text-primary font-medium">Creative Pulse Media</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full">Hybrid</span>
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full">$65k
+                            - $80k</span>
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs rounded-full flex items-center gap-1">
+                            <span class="material-icons text-xs">location_on</span> 4.1 miles away
+                        </span>
+                    </div>
+                    <button onclick="window.location.href='detail.html'"
+                        class="w-full py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all">
+                        Quick Apply
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Employers -->
+    <section class="py-16 bg-slate-50 dark:bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-lg font-semibold text-slate-500 uppercase tracking-widest mb-10">Trusted by top local
+                businesses</h2>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="h-10 w-auto flex items-center gap-2">
+                    <span class="material-icons text-slate-400 text-3xl">corporate_fare</span>
+                    <span class="text-xl font-bold text-slate-600">STARK INDUSTRIES</span>
+                </div>
+                <div class="h-10 w-auto flex items-center gap-2">
+                    <span class="material-icons text-slate-400 text-3xl">storefront</span>
+                    <span class="text-xl font-bold text-slate-600">WORLDLINK</span>
+                </div>
+                <div class="h-10 w-auto flex items-center gap-2">
+                    <span class="material-icons text-slate-400 text-3xl">biotech</span>
+                    <span class="text-xl font-bold text-slate-600">BIO-GEN LABS</span>
+                </div>
+                <div class="h-10 w-auto flex items-center gap-2">
+                    <span class="material-icons text-slate-400 text-3xl">construction</span>
+                    <span class="text-xl font-bold text-slate-600">CITY BUILDERS</span>
+                </div>
+                <div class="h-10 w-auto flex items-center gap-2">
+                    <span class="material-icons text-slate-400 text-3xl">account_balance</span>
+                    <span class="text-xl font-bold text-slate-600">FIRST TRUST</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-primary rounded-3xl p-8 md:p-16 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="relative z-10 text-white max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to find your dream job?</h2>
+                    <p class="text-primary-foreground/80 text-lg mb-8 opacity-90">Create a profile and let employers
+                        find you, or set up job alerts for your favorite categories.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-slate-100 transition-colors">Create
+                            Profile</button>
+                        <button
+                            class="bg-transparent border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-lg font-bold transition-colors">Post
+                            a Job</button>
+                    </div>
+                </div>
+                <div class="relative z-10 hidden lg:block">
+                    <div class="w-64 h-64 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-3xl">
+                        <span class="material-icons text-8xl text-white/40">send</span>
+                    </div>
+                </div>
+                <!-- Abstract BG patterns -->
+                <div class="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-black/10 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
