@@ -1,0 +1,44 @@
+
+.nav-link {
+    @apply text-zinc-600 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors font-medium;
+}
+
+.section-title {
+    @apply text-4xl md:text-5xl font-bold text-center text-primary mb-16;
+}
+
+.glow-ring {
+    filter: drop-shadow(0 0 15px rgba(34, 197, 94, 0.4));
+}
+
+.animate-spin-slow {
+    animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.skill-bar-bg {
+    @apply h-2 w-full bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden;
+}
+
+.skill-bar-fill {
+    @apply h-full bg-gradient-to-r from-primary to-green-300 transition-all duration-1000 ease-out;
+}
+
+.project-card {
+    @apply group relative rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-white dark:bg-zinc-900 transition-all hover:-translate-y-2 hover:shadow-2xl;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-zinc-100 dark:bg-zinc-950;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full hover:bg-primary;
+}
